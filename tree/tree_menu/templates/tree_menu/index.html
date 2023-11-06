@@ -1,11 +1,15 @@
-{% extends 'base.html' %}
+{% extends 'tree_menu/base.html' %}
 
 {% block title %} Index Page {% endblock %}
 
 {% load draw_menu %}
+
 {% block content %}
-
-{% draw_menu 'main_menu' %}
-
+<h2> Welcome to the Tree Page </h2>
+{% if menu %}
+    {% draw_menu 'main_menu' %}
+{% else %}
+    <p>Меню не найдено</p>
+{% endif %}
 
 {% endblock %}

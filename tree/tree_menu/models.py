@@ -3,7 +3,7 @@ from django.db import models
 
 class Menu(models.Model):
     """
-    Модель нчальных точек меню.
+    Модель начальных точек меню.
     """
     title = models.CharField(max_length=255, unique=True, verbose_name='Menu title')
     slug = models.SlugField(max_length=255, verbose_name="Menu slug")
