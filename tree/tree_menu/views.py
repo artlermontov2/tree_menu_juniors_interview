@@ -1,5 +1,3 @@
-from django.views.generic import TemplateView
+from django.shortcuts import render
 
 
-class IndexPageView(TemplateView):
-    template_name = "tree_menu/index.html"

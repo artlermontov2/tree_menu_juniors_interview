@@ -20,5 +20,4 @@ from tree_menu import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", views.IndexPageView.as_view(), name='menu')
 ]
