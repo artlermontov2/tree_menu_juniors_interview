@@ -17,10 +17,10 @@ def load_data():
     main_menu = Menu.objects.create(title="main_menu", slug="main_menu")
 
     # Создаем корневой объект "Crypto"
-    forex = MenuItem.objects.create(title="Crypto", slug="crypto", menu=main_menu)
+    crypto = MenuItem.objects.create(title="Crypto", slug="crypto", menu=main_menu)
 
     # Создаем объекты 2-го уровня
-    major = MenuItem.objects.create(title="Binance", slug="binance", menu=main_menu, parent=forex)
+    major = MenuItem.objects.create(title="Binance", slug="binance", menu=main_menu, parent=crypto)
 
 
     # Списки валютных пар
